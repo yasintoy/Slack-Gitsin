@@ -49,7 +49,7 @@ class Slack(object):
 			print "something goes wrong!"
 
 	def post_message(self, channel_name):
-		os.system("echo 'To mention a user write @ while chatting'")
+		os.system("echo '\u001b[1m\u001b[31m  To mention a user write @ while chatting \u001b[0m'")
 		text = prompt("your message > ", completer=WordCompleter(users))
 		channel_id = self.find_channel_id(channel_name)
 		url = "https://slack.com/api/chat.postMessage?token={token}&channel={channel_id}&text={text}&as_user=true&link_names=1".format(token=settings.token,
@@ -142,7 +142,7 @@ class Slack(object):
 			elif i == "title":
 				title = raw_input("\u001b[1m\u001b[31m title : \u001b[0m")
 			else:
-				initial_comment = prompt("send invites -> ", completer=WordCompleter(users),
+				initial_comment = prompt("add comment : ", completer=WordCompleter(users),
 													 style=DocumentStyle)
 		url = "https://slack.com/api/files.upload?token={token}&content={content}&filename={filename}&channels={channel_id}&title={title}&initial_comment={initial_comment}".format(token=settings.token,
 																																													content=content,
@@ -192,6 +192,9 @@ class Slack(object):
 			elif "username" in i:
 				text += "\033[31m" + (i["username"].encode('ascii', 'ignore').decode('ascii')) + "\033[0m" + "\t"
 			text += "\033[93m" + time.ctime(float(i["ts"])) + "\033[0m" + "\n"
+			# replace username_id with username
+			if "<@" in i["text"]:
+				i["text"] = "<" + i["text"].split("|")[1]
 			text += (i["text"].encode('ascii', 'ignore').decode('ascii')) + "\n\n"
 			os.system("echo ' " + text + "'"); text = "";
 
@@ -216,29 +219,32 @@ class Slack(object):
 
 
 	def run_command(self):
-		split_text = self.text.split(" ")
-		if split_text[1] == "channels.list":
-			response = self.get_channels_list()	
-			self.print_channels_list(response)	
-		elif split_text[1] == "channels.join":
-			if len(split_text) < 4:
-				print "Please enter values properly"
-			else:
-				self.channels_join(split_text[3])
-		elif split_text[1] == "channels.history":
-			if len(split_text) < 4:
-				print "Please enter values properly!"
-			else:
-				self.channels_history(split_text[3]) # send channel_name
-		elif split_text[1] == "chat.postMessage":
-			self.post_message(split_text[3])
-		elif split_text[1] == "channels.invite":
-			self.channels_invite(split_text[3]) # send channel_name
-		elif split_text[1] == "channels.create":
-			self.channels_create()
-		elif split_text[1] == "users.list":
-			self.users_list()
-		elif split_text[1] == "users.info":
-			self.users_info(split_text[3])
-		elif split_text[1] == "files.upload":
-			self.file_upload(split_text[3])
+		try:
+			split_text = self.text.split(" ")
+			if split_text[1] == "channels.list":
+				response = self.get_channels_list()	
+				self.print_channels_list(response)	
+			elif split_text[1] == "channels.join":
+				if len(split_text) < 4:
+					print "Please enter values properly"
+				else:
+					self.channels_join(split_text[3])
+			elif split_text[1] == "channels.history":
+				if len(split_text) < 4:
+					print "Please enter values properly!"
+				else:
+					self.channels_history(split_text[3]) # send channel_name
+			elif split_text[1] == "chat.postMessage":
+				self.post_message(split_text[3])
+			elif split_text[1] == "channels.invite":
+				self.channels_invite(split_text[3]) # send channel_name
+			elif split_text[1] == "channels.create":
+				self.channels_create()
+			elif split_text[1] == "users.list":
+				self.users_list()
+			elif split_text[1] == "users.info":
+				self.users_info(split_text[3])
+			elif split_text[1] == "files.upload":
+				self.file_upload(split_text[3])
+		except:
+			print "something goes wrong!"

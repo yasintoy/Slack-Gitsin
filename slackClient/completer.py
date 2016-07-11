@@ -9,33 +9,16 @@ from prompt_toolkit.completion import Completer
 
 from completions import SUBCOMMANDS, ARGS_OPTS_LOOKUP
 
-
+#adapted from haxor-news project
 class Completer(Completer):
-    """Completer for haxor-news.
-
-    :type text_utils: :class:`utils.TextUtils`
-    :param text_utils: An instance of `utils.TextUtils`.
-
-    :type fuzzy_match: bool
-    :param fuzzy_match: Determines whether to use fuzzy matching.
-    """
 
     def __init__(self, fuzzy_match, text_utils):
         self.fuzzy_match = fuzzy_match
         self.text_utils = text_utils
 
     def completing_command(self, words, word_before_cursor):
-        """Determine if we are currently completing the slack command.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: bool
-        :return: Specifies whether we are currently completing the hn command.
+        """
+            Determine if we are currently completing the slack command.
         """
         if len(words) == 1 and word_before_cursor != '':
             return True
@@ -43,17 +26,8 @@ class Completer(Completer):
             return False
 
     def completing_subcommand(self, words, word_before_cursor):
-        """Determine if we are currently completing a subcommand.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: bool
-        :return: Specifies whether we are currently completing a subcommand.
+        """
+            Determine if we are currently completing a subcommand.
         """
         if (len(words) == 1 and word_before_cursor == '') \
                 or (len(words) == 2 and word_before_cursor != ''):
@@ -62,17 +36,8 @@ class Completer(Completer):
             return False
 
     def completing_arg(self, words, word_before_cursor):
-        """Determine if we are currently completing an arg.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: bool
-        :return: Specifies whether we are currently completing an arg.
+        """
+            Determine if we are currently completing an arg.
         """
         if (len(words) == 2 and word_before_cursor == '') \
                 or (len(words) == 3 and word_before_cursor != ''):
@@ -83,19 +48,8 @@ class Completer(Completer):
 
 
     def completing_subcommand_option_util(self, option, words):
-        """Determine if we are currently completing an option.
-
-        Called by completing_subcommand_option as a utility method.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: bool
-        :return: Specifies whether we are currently completing an option.
+        """
+            Determine if we are currently completing an option.
         """
         # Example: Return True for: hn view 0 --comm
         if len(words) > 3:
@@ -105,16 +59,8 @@ class Completer(Completer):
 
 
     def get_completions(self, document, _):
-        """Get completions for the current scope.
-
-        :type document: :class:`prompt_toolkit.Document`
-        :param document: An instance of `prompt_toolkit.Document`.
-
-        :type _: :class:`prompt_toolkit.completion.Completion`
-        :param _: (Unused).
-
-        :rtype: generator
-        :return: Yields an instance of `prompt_toolkit.completion.Completion`.
+        """
+            Get completions for the current scope.
         """
         word_before_cursor = document.get_word_before_cursor(WORD=True)
         words = self.text_utils.get_tokens(document.text)
@@ -140,17 +86,8 @@ class Completer(Completer):
         return completions
         
     def arg_completions(self, words, word_before_cursor):
-        """Generates arguments completions based on the input.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: list
-        :return: A list of completions.
+        """
+            Generates arguments completions based on the input.
         """
         if 'slack' not in words:
             return []
@@ -160,17 +97,8 @@ class Completer(Completer):
         return ['10']
 
     def completing_subcommand_option(self, words, word_before_cursor):
-        """Determine if we are currently completing an option.
-
-        :type words: list
-        :param words: The input text broken into word tokens.
-
-        :type word_before_cursor: str
-        :param word_before_cursor: The current word before the cursor,
-            which might be one or more blank spaces.
-
-        :rtype: list
-        :return: A list of options.
+        """
+            Determine if we are currently completing an option.
         """
         options = []
         for subcommand, args_opts in ARGS_OPTS_LOOKUP.items():

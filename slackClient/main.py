@@ -56,8 +56,7 @@ def get_alert(text):
         if "text" in i:
             if my_user_id in i['text']:
                 i["text"] = i["text"].replace(my_user_id, "@"+ find_user_name(response["user_id"]))
-                os.system("notify-send '{user} : {message}'".format(user=find_user_name(i["user"]), message=i['text']))
-
+                os.system("notify-send -i " + settings.slack_logo + " 'you have new message' '{user} : {message}'".format(user=find_user_name(i["user"]), message=i['text']))
 
 
 def check_notification():
@@ -70,7 +69,7 @@ def check_notification():
     else:
         print "Connection Failed, invalid token?"
 
-stop = call_repeatedly(3, check_notification) # call check_notification every 3 second
+stop = call_repeatedly(2, check_notification) # call check_notification every 2 second
 
 def main():
     """ 

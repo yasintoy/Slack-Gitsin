@@ -3,8 +3,8 @@
 
 __author__ = 'yasin'
 
-#hipo
-# token = "xoxp-2183021064-19334121605-54640934578-d86bf5f482" # hipo
-
 # nebula
-token = "xoxp-17438844928-17438150098-57079130211-0883244951"
+token = "xoxp-17438844928-17438150098-58555119472-45f0326c42"
+
+#slack_logo_locations
+slack_logo = "../screen_shot/slack_logo.png"
