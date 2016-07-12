@@ -25,7 +25,6 @@ from prompt_toolkit.interface import AcceptAction
 from utils import TextUtils
 from completer import Completer
 
-from commands import channels
 from slack import Slack
 from style import DocumentStyle
 
