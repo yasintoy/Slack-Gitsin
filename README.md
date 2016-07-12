@@ -16,7 +16,7 @@ A mix of pycharm, slack, vagrant and chrome :
 
 Usage gif will be added here...
 
-## Installation
+## Installation(it's not finished)
 **For Linux :**
 ```
   git clone https://github.com/yasintoy/Slack-Gitsin/
