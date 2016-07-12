@@ -17,6 +17,7 @@ class DocumentStyle(Style):
         Token.Menu.Completions.ProgressBar: 'bg:#00aaaa',
         Token.Scrollbar.Button: 'bg:#003333',
         Token.Scrollbar: 'bg:#00aaaa',
+        Token.Toolbar : 'bg:#222222 #ffffff',
         Token.Toolbar.Arg: 'noinherit bold',
         Token.Toolbar.Arg.Text: 'nobold'
     }
