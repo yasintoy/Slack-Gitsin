@@ -8,8 +8,8 @@ The Problem
 > *Is this a known issue and if so is there any solution?*
 > *-[Source](https://www.reddit.com/r/Slack/comments/3fy494/slack_taking_up_a_lot_of_system_resources/)
 
-Are you kidding me? "8 GB ought to be enough for everyone", Don't be ridiculous.
-=============================================================
+## Are you kidding me? "8 GB ought to be enough for everyone", Don't be ridiculous.
+
 A mix of pycharm, slack, vagrant and chrome : 
 # ![](screen_shots/marcosmemory.jpg)
 
