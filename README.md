@@ -42,10 +42,14 @@ brew install figlet zenity
 **Now, we have notification system for mac/linux**
 # ![](screen_shots/notification_test.png)
 
+## TODO
+
+* [Real time chat](https://github.com/yasintoy/Slack-Gitsin/)
+* [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/)
+
 **Overview with some example screenshots**
 
 # ![](screen_shots/overview.png)
-
 
 ## Create channel
 
