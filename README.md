@@ -39,6 +39,9 @@ brew install figlet zenity
 
 ```
 
+**Now, we have notification system for mac/linux**
+# ![](screen_shots/notification_test.png)
+
 **Overview with some example screenshots**
 
 # ![](screen_shots/overview.png)
