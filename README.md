@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ```
 
-**For Mac : (TODO)** 
+**For Mac : ** 
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
 virtualenv -p python2.7 env
@@ -46,39 +46,39 @@ brew install figlet zenity
 
 ## Create channel
 
-   You can easily create slack channel by using the `SlackClient`
+   You can easily create a new slack channel by using the `SlackClient`
 
 # ![image](screen_shots/channel_create_screen.png)
 
 ## Show channel messages
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+   It shows all slack channels that we have in our team.
 
 # ![image](screen_shots/history_screen.png)
 
 ## Send a post to channel
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+   You can send a post to a channel.
+   ``TODO : `` we'll add real time chat
 
 # ![image](screen_shots/channel_post_screen.png)
 
 
 ## List all Slack channels
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+  Shows all slack channels that we have in our slack team.
 
 # ![image](screen_shots/channel_list_screen.png)
 
-## Join a channels that unmember
+## Join a channel in your slack team
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
 
 # ![image](screen_shots/channel_join_screen.png)
 
 
 ## Upload a file into slack channel
 
-    (Message will chance)You can easily create slack channel by using the `SlackClient`
+    You can easily upload a file your slack channel by using the `SlackClient`
 
 - First, choice file upload option
 # ![image](screen_shots/upload_file_menu.png)
