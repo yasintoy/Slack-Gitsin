@@ -14,7 +14,7 @@ A mix of pycharm, slack, vagrant and chrome :
 # ![](screen_shots/marcosmemory.jpg)
 
 
-Usage gif will be added here...
+# ![](screen_shots/anim.gif)
 
 ## Installation(it's not finished)
 **For Linux :**
