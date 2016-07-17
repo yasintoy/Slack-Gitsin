@@ -55,9 +55,13 @@ def get_alert(text):
         if "text" in i:
             if my_user_id in i['text']:
                 i["text"] = i["text"].replace(my_user_id, "@" + find_user_name(response["user_id"]))
-                os.system(
-                    "notify-send -i " + settings.slack_logo + " 'you have new message' '{user} : {message}'".format(
-                        user=find_user_name(i["user"]), message=i['text']))
+                if os.name == "posix":
+                    cmd = """osascript -e 'display notification "{message}" with title "{title}" ' """.format(message=find_user_name(i["user"]) + " : " + i['text'], title="You have a new message")
+                    os.system(cmd)
+                else:
+                    os.system(
+                        "notify-send -i " + settings.slack_logo + " 'you have new message' '{user} : {message}'".format(
+                            user=find_user_name(i["user"]), message=i['text']))
 
 
 def call_repeatedly(interval, func, *args):

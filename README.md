@@ -19,23 +19,23 @@ The Problem
 ## Installation(it's not finished)
 **For Linux :**
 ```
-  git clone https://github.com/yasintoy/Slack-Gitsin/
-  cd Slack-Gitsin
-  sudo apt-get install lolcat figlet zenity
-  virtualenv env
-  source env/bin/active
-  pip install -r requirements.txt 
+git clone https://github.com/yasintoy/Slack-Gitsin.git
+cd Slack-Gitsin
+sudo apt-get install lolcat figlet zenity
+virtualenv env
+source env/bin/active
+pip install -r requirements.txt 
 
 ```
 
 **For Mac : (TODO)** 
 ```
-  git clone https://github.com/yasintoy/Slack-Gitsin/
-  cd Slack-Gitsin
-  brew install lolcat figlet zenity # if brew doesn't exist install it
-  virtualenv env
-  source env/bin/active
-  pip install -r requirements.txt 
+git clone https://github.com/yasintoy/Slack-Gitsin.git
+virtualenv -p python2.7 env
+source env/bin/active
+pip install -r requirements.txt
+sudo gem install lolcat
+brew install figlet zenity
 
 ```
 
