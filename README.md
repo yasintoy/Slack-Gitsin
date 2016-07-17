@@ -16,7 +16,7 @@ The Problem
 
 # ![](screen_shots/anim.gif)
 
-## Installation(it's not finished)
+## Installation
 **For Linux :**
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 ```
 
-**For Mac : ** 
+**For Mac :** 
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
 virtualenv -p python2.7 env
