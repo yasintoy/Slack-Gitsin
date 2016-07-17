@@ -16,7 +16,7 @@ A mix of pycharm, slack, vagrant and chrome :
 
 Usage gif will be added here...
 
-## Installation
+## Installation(it's not finished)
 **For Linux :**
 ```
   git clone https://github.com/yasintoy/Slack-Gitsin/
@@ -39,7 +39,53 @@ Usage gif will be added here...
 
 ```
 
+**Overview with some example screenshots**
 
-      
+# ![](screen_shots/overview.png)
 
+
+## Create channel
+
+   You can easily create slack channel by using the `SlackClient`
+
+# ![image](screen_shots/channel_create_screen.png)
+
+## Show channel messages
+
+   (Message will chance)You can easily create slack channel by using the `SlackClient`
+
+# ![image](screen_shots/history_screen.png)
+
+## Send a post to channel
+
+   (Message will chance)You can easily create slack channel by using the `SlackClient`
+
+# ![image](screen_shots/channel_post_screen.png)
+
+
+## List all Slack channels
+
+   (Message will chance)You can easily create slack channel by using the `SlackClient`
+
+# ![image](screen_shots/channel_list_screen.png)
+
+## Join a channels that unmember
+
+   (Message will chance)You can easily create slack channel by using the `SlackClient`
+
+# ![image](screen_shots/channel_join_screen.png)
+
+
+## Upload a file into slack channel
+
+    (Message will chance)You can easily create slack channel by using the `SlackClient`
+
+- First, choice file upload option
+# ![image](screen_shots/upload_file_menu.png)
+
+- Then, choice file by using the file dialog
+# ![image](screen_shots/opened_file_dialog.png)
+
+- Finally, fill out the screen
+# ![image](screen_shots/file_upload_process.png)
 
