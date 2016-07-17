@@ -10,7 +10,7 @@ The Problem
 
 ## Are you kidding me? "8 GB ought to be enough for everyone", Don't be ridiculous.
 
-A mix of pycharm, slack, vagrant and chrome : 
+`Let me show you an example : ` A mix of pycharm, slack, vagrant and chrome : 
 # ![](screen_shots/marcosmemory.jpg)
 
 
