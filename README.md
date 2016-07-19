@@ -22,8 +22,8 @@ The Problem
 git clone https://github.com/yasintoy/Slack-Gitsin.git
 cd Slack-Gitsin
 sudo apt-get install lolcat figlet zenity
-virtualenv env
-source env/bin/active
+virtualenv -p python2.7 env
+source env/bin/activate
 pip install -r requirements.txt 
 
 ```
@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
 virtualenv -p python2.7 env
-source env/bin/active
+source env/bin/activate
 pip install -r requirements.txt
 sudo gem install lolcat
 brew install figlet zenity
