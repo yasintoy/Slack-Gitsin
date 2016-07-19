@@ -44,10 +44,12 @@ brew install figlet zenity
 
 # ![](screen_shots/memoryUsage.png)
 
-## TODO
+## TODO 
 
 * [Real time chat](https://github.com/yasintoy/Slack-Gitsin/)
+* [Solve user_info printing](https://github.com/yasintoy/Slack-Gitsin/)
 * [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/)
+* [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/)
 
 **Overview with some example screenshots**
 
