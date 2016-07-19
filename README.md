@@ -17,6 +17,9 @@ The Problem
 # ![](screen_shots/anim.gif)
 
 ## Installation
+
+**First, add your slack token to settings.py file**
+
 **For Linux :**
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
