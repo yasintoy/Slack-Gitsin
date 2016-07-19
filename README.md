@@ -10,75 +10,87 @@ The Problem
 
 ## Are you kidding me? "8 GB ought to be enough for everyone", Don't be ridiculous.
 
-A mix of pycharm, slack, vagrant and chrome : 
+`Let me show you an example : ` A mix of pycharm, slack, vagrant and chrome : 
 # ![](screen_shots/marcosmemory.jpg)
 
 
-Usage gif will be added here...
+# ![](screen_shots/anim.gif)
 
-## Installation(it's not finished)
+## Installation
 **For Linux :**
 ```
-  git clone https://github.com/yasintoy/Slack-Gitsin/
-  cd Slack-Gitsin
-  sudo apt-get install lolcat figlet zenity
-  virtualenv env
-  source env/bin/active
-  pip install -r requirements.txt 
+git clone https://github.com/yasintoy/Slack-Gitsin.git
+cd Slack-Gitsin
+sudo apt-get install lolcat figlet zenity
+virtualenv env
+source env/bin/active
+pip install -r requirements.txt 
 
 ```
 
-**For Mac : (TODO)** 
+**For Mac :** 
 ```
-  git clone https://github.com/yasintoy/Slack-Gitsin/
-  cd Slack-Gitsin
-  brew install lolcat figlet zenity # if brew doesn't exist install it
-  virtualenv env
-  source env/bin/active
-  pip install -r requirements.txt 
+git clone https://github.com/yasintoy/Slack-Gitsin.git
+virtualenv -p python2.7 env
+source env/bin/active
+pip install -r requirements.txt
+sudo gem install lolcat
+brew install figlet zenity
 
 ```
+
+**Now, we have notification system for mac/linux**
+# ![](screen_shots/notification_test.png)
+
+# ![](screen_shots/memoryUsage.png)
+
+## TODO 
+
+* [Real time chat](https://github.com/yasintoy/Slack-Gitsin/issues/6)
+* [Solve user_info printing](https://github.com/yasintoy/Slack-Gitsin/issues/2)
+* [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/issues/4)
+* [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/issues/3)
+* [Make setup.py file](https://github.com/yasintoy/Slack-Gitsin/issues/5)
 
 **Overview with some example screenshots**
 
 # ![](screen_shots/overview.png)
 
-
 ## Create channel
 
-   You can easily create slack channel by using the `SlackClient`
+   You can easily create a new slack channel by using the `SlackClient`
 
 # ![image](screen_shots/channel_create_screen.png)
 
 ## Show channel messages
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+   It shows all slack channels that we have in our team.
 
 # ![image](screen_shots/history_screen.png)
 
 ## Send a post to channel
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+   You can send a post to a channel.
+   ``TODO : `` we'll add real time chat
 
 # ![image](screen_shots/channel_post_screen.png)
 
 
 ## List all Slack channels
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
+  Shows all slack channels that we have in our slack team.
 
 # ![image](screen_shots/channel_list_screen.png)
 
-## Join a channels that unmember
+## Join a channel in your slack team
 
-   (Message will chance)You can easily create slack channel by using the `SlackClient`
 
 # ![image](screen_shots/channel_join_screen.png)
 
 
 ## Upload a file into slack channel
 
-    (Message will chance)You can easily create slack channel by using the `SlackClient`
+    You can easily upload a file your slack channel by using the `SlackClient`
 
 - First, choice file upload option
 # ![image](screen_shots/upload_file_menu.png)
