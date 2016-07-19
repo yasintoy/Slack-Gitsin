@@ -50,7 +50,7 @@ brew install figlet zenity
 * [Solve user_info printing](https://github.com/yasintoy/Slack-Gitsin/issues/2)
 * [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/issues/4)
 * [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/issues/3)
-* [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/issues/5)
+* [Make setup.py file](https://github.com/yasintoy/Slack-Gitsin/issues/5)
 
 **Overview with some example screenshots**
 
