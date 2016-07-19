@@ -46,10 +46,10 @@ brew install figlet zenity
 
 ## TODO 
 
-* [Real time chat](https://github.com/yasintoy/Slack-Gitsin/)
-* [Solve user_info printing](https://github.com/yasintoy/Slack-Gitsin/)
-* [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/)
-* [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/)
+* [Real time chat](https://github.com/yasintoy/Slack-Gitsin/issues/6)
+* [Solve user_info printing](https://github.com/yasintoy/Slack-Gitsin/issues/2)
+* [Pagination for showing messages](https://github.com/yasintoy/Slack-Gitsin/issues/4)
+* [Solve emoji problem](https://github.com/yasintoy/Slack-Gitsin/issues/3)
 
 **Overview with some example screenshots**
 
