@@ -9,3 +9,4 @@ slackclient==1.0.0
 wcwidth==0.1.6
 websocket-client==0.37.0
 wsgiref==0.1.2
+pygments==2.1.3
