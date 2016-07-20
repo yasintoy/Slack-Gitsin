@@ -1,4 +1,3 @@
-Pygments==2.1.3
 argparse==1.2.1
 backports.ssl-match-hostname==3.5.0.1
 click==6.6
