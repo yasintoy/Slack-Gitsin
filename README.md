@@ -34,11 +34,9 @@ pip install -r requirements.txt
 **For Mac :** 
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
-virtualenv -p python2.7 env
-source env/bin/activate
-pip install -r requirements.txt
-sudo gem install lolcat
-brew install figlet zenity
+cd Slack-Gitsin
+chmod +x setup.sh
+./setup.sh
 
 ```
 
