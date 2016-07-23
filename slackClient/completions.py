@@ -41,9 +41,6 @@ for i in response["members"]:
     )
 
 
-FREELANCER_POST_ID = str(8)
-WHO_IS_HIRING_POST_ID = str(10)
-
 SUBCOMMANDS = {
 
 	"channels.history"  : "Fetches history of messages and events from a channel.",
