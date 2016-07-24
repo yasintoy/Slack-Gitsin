@@ -5,8 +5,9 @@ function setup {
   virtualenv -p python2.7 env
   source env/bin/activate
   pip install -r requirements.txt
-  sudo gem install lolcat
-  brew install figlet zenity
+#  sudo gem install lolcat
+#  brew install figlet zenity
+  sudo apt-get install lolcat figlet zenity
 }
 
 if which python >/dev/null; then
