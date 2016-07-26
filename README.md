@@ -29,10 +29,8 @@ Let me show you an example: A mix of pycharm, slack, vagrant and chrome:
 ```
 git clone https://github.com/yasintoy/Slack-Gitsin.git
 cd Slack-Gitsin
-sudo apt-get install lolcat figlet zenity
-virtualenv -p python2.7 env
-source env/bin/activate
-pip install -r requirements.txt
+sudo chmod +x setup-linux.sh
+./setup-linux.sh
 
 ```
 
