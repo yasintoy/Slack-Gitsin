@@ -48,6 +48,12 @@ When the installation completes, add your [Slack Token](https://api.slack.com/do
 
 ## Getting Started
 
+Before start, you should get in the `slack` mode by typing:
+
+```
+$ python main.py
+```
+
 ### List all Slack channels
 
   ```
