@@ -23,6 +23,8 @@ Let me show you an example: A mix of pycharm, slack, vagrant and chrome:
 - [Contributing](#contributing)
 - [License](#license)
 
+## project no longer maintained :(
+
 ## Installation
 
 **For Linux :**
